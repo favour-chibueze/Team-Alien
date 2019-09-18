@@ -6,7 +6,7 @@
   
 body {
   background-color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, 'Libre Franklin', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  font-family: -apple-system, BlinkMacSystemFont, 'Libre Franklin', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   /* background: linear-gradient(to right, #0062E6, #33AEFF); */
 }
 
@@ -20,29 +20,6 @@ img{
   border-radius: 5px;
 }
 
-/* removed card to suit design content */
-
-.card-title{
-  color: #0062E6;
-  font-size: 10em;
-  border: 1px solid red;
-}
-
-.card-signin {
-  border: 0;
-  border-radius: 1rem;
-  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
-}
-
-.card-signin .card-title {
-  font-weight: 300;
-  font-size: 1.5rem;
-  padding-top: 20px;
-}
-
-.card-signin .card-body {
-  padding: 2rem;
-}
 
 /* .form-signup{
   width: 100%;
@@ -56,7 +33,7 @@ img{
   /* border: 1px solid red; */
 }
 
-/* added different styling */
+
 /* sign up styling starts here */
 
 .form-wrapper{
@@ -124,16 +101,29 @@ input[type="text"], [type="password"]{
   border: none;
 }
 
+
 .link-to-login{
+  color: #B10DC9;
+}
+
+.link-to-signup{
   color: #B10DC9;
 }
 
 /* signup styling stops here */
 
+/* signin styling starts here */
 
-
-
-
+.form-signin{
+  padding: 50px 0;
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont;
+}
 
 .form-signin .btn {
   font-size: 80%;
@@ -206,11 +196,28 @@ input[type="text"], [type="password"]{
   color: #777;
 }
 
+.custom-control-label {
+  margin-top: 15px;
+  float: center;
+}
+
+.sign-in-btn{
+  background: #B10DC9;
+  margin: 0 auto;
+  border-radius: 50px;
+  border: none;
+}
+
 .btn-google {
   color: white;
   background-color: #ea4335;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 50px;
+  border: none;
 }
-  button:hover {
+.btn-google:hover {
+    background-color: #A50F03;
     transform: scale(1.1);
     box-shadow: 4px 4px 4px gray;
 }
@@ -218,7 +225,19 @@ input[type="text"], [type="password"]{
 .btn-facebook {
   color: white;
   background-color: #3b5998;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 50px;
+  border: none;
 }
+
+
+.btn-facebook:hover {
+  background-color: #31519B;
+  transform: scale(1.1);
+  box-shadow: 4px 4px 4px gray;
+}
+
 p {
   text-align: center;
   margin-top: -10px;
@@ -228,6 +247,8 @@ a{
   text-decoration: none;
   color: blue;
 }
+
+/* signin styling stops here */
 
 /* Fallback for Edge
 -------------------------------------------------- */
