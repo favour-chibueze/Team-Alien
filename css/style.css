@@ -44,10 +44,10 @@ img{
   padding: 2rem;
 }
 
-.form-signup{
+/* .form-signup{
   width: 100%;
   border: 1px solid blue;
-}
+} */
 
 /* for sign in */
 
@@ -92,7 +92,7 @@ img{
   margin: 0 auto;
 }
 
-.new-form{
+.form-signup{
   padding: 50px 0;
   width: 100%;
   border: 1px solid #000;
