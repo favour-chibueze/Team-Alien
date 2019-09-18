@@ -1,0 +1,255 @@
+/* :root {
+  --input-padding-x: 1.5rem;
+  --input-padding-y: .75rem;
+  background-color: white;
+} */
+  
+body {
+  background-color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Libre Franklin', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  /* background: linear-gradient(to right, #0062E6, #33AEFF); */
+}
+
+  /* for second html*/
+img{
+  width: 115.7%;
+  height: 10%;
+  margin-top: -31px;
+  margin-left: -30px;
+  padding: 0px;
+  border-radius: 5px;
+}
+
+/* removed card to suit design content */
+
+.card-title{
+  color: #0062E6;
+  font-size: 10em;
+  border: 1px solid red;
+}
+
+.card-signin {
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-signin .card-title {
+  font-weight: 300;
+  font-size: 1.5rem;
+  padding-top: 20px;
+}
+
+.card-signin .card-body {
+  padding: 2rem;
+}
+
+.form-signup{
+  width: 100%;
+  border: 1px solid blue;
+}
+
+/* for sign in */
+
+.form-signin {
+  width: 100%;
+  /* border: 1px solid red; */
+}
+
+/* added different styling */
+/* sign up styling starts here */
+
+.form-wrapper{
+  display: flex;
+  border: 1px solid black;
+  width: 100%;
+  height: 1000px;
+}
+
+.col-wrapper{
+  height: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.header-content{
+  width: 100%;
+  background: #B10DC9;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 20px 20px 0 0;
+}
+
+.form-section{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.new-form{
+  padding: 50px 0;
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input[type="text"], [type="password"]{
+  width: 100%;
+  height: 100%;
+}
+
+.form-checkbox{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-checkbox-inner{
+  width: 65%;
+}
+
+.sign-up-btn{
+  background: #B10DC9;
+  margin: 0 auto;
+  border-radius: 50px;
+  border: none;
+}
+
+.link-to-login{
+  color: #B10DC9;
+}
+
+/* signup styling stops here */
+
+
+
+
+
+
+.form-signin .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  transition: all 0.2s;
+}
+
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-label-group input {
+  height: auto;
+  border-radius: 2rem;
+}
+
+.form-label-group>input,
+.form-label-group>label {
+  padding: var(--input-padding-y) var(--input-padding-x);
+}
+
+.form-label-group>label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+  /* Override default `<label>` margin */
+  line-height: 1.5;
+  color: #495057;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  transition: all .1s ease-in-out;
+}
+
+.form-label-group input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-moz-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::placeholder {
+  color: transparent;
+}
+
+.form-label-group input:not(:placeholder-shown) {
+  padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+  padding-bottom: calc(var(--input-padding-y) / 3);
+}
+
+.form-label-group input:not(:placeholder-shown)~label {
+  padding-top: calc(var(--input-padding-y) / 3);
+  padding-bottom: calc(var(--input-padding-y) / 3);
+  font-size: 12px;
+  color: #777;
+}
+
+.btn-google {
+  color: white;
+  background-color: #ea4335;
+}
+  button:hover {
+    transform: scale(1.1);
+    box-shadow: 4px 4px 4px gray;
+}
+
+.btn-facebook {
+  color: white;
+  background-color: #3b5998;
+}
+p {
+  text-align: center;
+  margin-top: -10px;
+}
+
+a{
+  text-decoration: none;
+  color: blue;
+}
+
+/* Fallback for Edge
+-------------------------------------------------- */
+
+@supports (-ms-ime-align: auto) {
+  .form-label-group>label {
+    display: none;
+  }
+  .form-label-group input::-ms-input-placeholder {
+    color: #777;
+  }
+}
+
+/* Fallback for IE
+-------------------------------------------------- */
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+  .form-label-group>label {
+    display: none;
+  }
+  .form-label-group input:-ms-input-placeholder {
+    color: #777;
+  }
+}
