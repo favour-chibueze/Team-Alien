@@ -1,4 +1,4 @@
-<?php include('server.php') ?>
+<?php include('server.php')?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -21,7 +21,7 @@
           <div class="card-body">
              <!-- <img src="img/desk.jpg"> -->
             <h5 class="card-title text-center">Sign Up</h5>
-            <form class="form-signin mx-auto" method="POST" action="signup.php">
+            <form class="form-signin mx-auto" method="POST" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>">
             
              <?php include('errors.php'); ?>
              
