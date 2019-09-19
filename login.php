@@ -19,7 +19,6 @@ if (isset($_COOKIE["heistuser"])) {
             $_SESSION['loggedin'] = true;
             $_SESSION['fullname'] = $user->fullname;
             $_SESSION['username'] = $user->username;
-            $_SESSION['phone'] = $user->phone;
             $msg = "Logged in successfully";
             header("location:welcome.php?message=$msg");
         } else {
@@ -64,7 +63,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])) {
                     $_SESSION['loggedin'] = true;
                     $_SESSION['fullname'] = $user->fullname;
                     $_SESSION['username'] = $user->username;
-                    $_SESSION['phone'] = $user->phone;
                     $msg = "Logged in successfully";
                     header("location:welcome.php?message=$msg");
                 } else {
