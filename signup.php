@@ -122,7 +122,7 @@ if (isset($_POST["submit"])) {
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="username" class="col-sm-4 col-md-4 col-lg-4 col-form-label"> Username:</label>
+                                    <label for="username" class="col-sm-4 col-md-4 col-lg-4 col-form-label">  Username:</label>
                                     <div class="col-sm-8 col-md-8 col-lg-8">
                                         <input type="text" class="form-control" name='username' id="username" placeholder="Enter your username" required>
                                         
