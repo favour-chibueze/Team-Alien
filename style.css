@@ -11,12 +11,12 @@
   }
   
   img{
-    width: 115.7%;
-    height: 10%;
+    width: 110.75%;
+    /* height: 2%; */
     margin-top: -31px;
     margin-left: -30px;
     padding: 0px;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 .card-title{
@@ -28,20 +28,24 @@
     border: 0;
     border-radius: 1rem;
     box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    height:  90vh;
+    width: 80%;
+    margin: 0 auto;
   }
   
   .card-signin .card-title {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+    margin-top: -2rem;
     font-weight: 300;
     font-size: 1.5rem;
   }
   
   .card-signin .card-body {
-    padding: 2rem;
+    padding: 7rem 0 0 0;
   }
   
   .form-signin {
-    width: 100%;
+    width: 75%;
   }
   
   .form-signin .btn {
@@ -136,6 +140,19 @@
   a{
     text-decoration: none;
     color: blue;
+  }
+
+  .account{
+    margin-top: 1rem;
+  }
+
+  .forgot_password{
+    /* display: inline-block; */
+    float: right;
+  }
+
+  a label{
+    cursor: pointer;
   }
 
   /* Fallback for Edge
