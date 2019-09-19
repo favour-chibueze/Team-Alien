@@ -1,138 +1,56 @@
-/* :root {
+:root {
   --input-padding-x: 1.5rem;
   --input-padding-y: .75rem;
   background-color: white;
-} */
-  
+}
+
 body {
-  background-color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, 'Libre Franklin', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  /* background: linear-gradient(to right, #0062E6, #33AEFF); */
+  background-color: white;
+  background: white;
+  background: linear-gradient(to right, #0062E6, #33AEFF);
 }
 
-  /* for second html*/
-img{
-  width: 115.7%;
-  height: 10%;
-  margin-top: -31px;
-  margin-left: -30px;
-  padding: 0px;
-  border-radius: 5px;
+/* signin styling starts here */
+.card-signin {
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
 }
 
+.card-signin .card-title {
+  margin-bottom: 2rem;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
 
-/* .form-signup{
-  width: 100%;
-  border: 1px solid blue;
-} */
-
-/* for sign in */
+.card-signin .card-body {
+  padding: 2rem;
+}
 
 .form-signin {
   width: 100%;
-  /* border: 1px solid red; */
-}
-
-
-/* sign up styling starts here */
-
-.form-wrapper{
-  display: flex;
-  border: 1px solid black;
-  width: 100%;
-  height: 1000px;
-}
-
-.col-wrapper{
-  height: 1000px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.header-content{
-  width: 100%;
-  background: #B10DC9;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  text-transform: uppercase;
-  border-radius: 20px 20px 0 0;
-}
-
-.form-section{
-  width: 80%;
-  margin: 0 auto;
-}
-
-.form-signup{
-  padding: 50px 0;
-  width: 100%;
-  border: 1px solid #000;
-  border-radius: 0 0 20px 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-input[type="text"], [type="password"]{
-  width: 100%;
-  height: 100%;
-}
-
-.form-checkbox{
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.form-checkbox-inner{
-  width: 65%;
-}
-
-.sign-up-btn{
-  background: #B10DC9;
-  margin: 0 auto;
-  border-radius: 50px;
-  border: none;
-}
-
-
-.link-to-login{
-  color: #B10DC9;
-}
-
-.link-to-signup{
-  color: #B10DC9;
-}
-
-/* signup styling stops here */
-
-/* signin styling starts here */
-
-.form-signin{
-  padding: 50px 0;
-  width: 100%;
-  border: 1px solid #000;
-  border-radius: 0 0 20px 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-family: -apple-system, BlinkMacSystemFont;
 }
 
 .form-signin .btn {
   font-size: 80%;
+  width: 70%;
   border-radius: 5rem;
   letter-spacing: .1rem;
   font-weight: bold;
-  padding: 1rem;
+  padding: 0.7rem;
   transition: all 0.2s;
 }
+
+.sign-in-btn {
+  background: #3b5998;
+  margin: 0 auto;
+  border-radius: 50px;
+  border: none;
+  }
+
+/* signin styling stops here */
+
+/* form styling starts here */
 
 .form-label-group {
   position: relative;
@@ -196,51 +114,47 @@ input[type="text"], [type="password"]{
   color: #777;
 }
 
-.custom-control-label {
-  margin-top: 15px;
-  float: center;
+/* form styling stops here */
+
+/* signup styling starts here */
+.form-signup {
+  width: 100%;
 }
 
-.sign-in-btn{
-  background: #B10DC9;
-  margin: 0 auto;
-  border-radius: 50px;
-  border: none;
+.remember_pwd {
+  font-size: 0.9em;
 }
 
-.btn-google {
-  color: white;
-  background-color: #ea4335;
-  width: 50%;
-  margin: 0 auto;
-  border-radius: 50px;
-  border: none;
-}
-.btn-google:hover {
-    background-color: #A50F03;
-    transform: scale(1.1);
-    box-shadow: 4px 4px 4px gray;
+.forgot_password{
+  /* display: inline-block; */
+  float: right;
+  margin-top: -40px;
+  font-size: 0.9em;
 }
 
-.btn-facebook {
-  color: white;
-  background-color: #3b5998;
-  width: 60%;
-  margin: 0 auto;
-  border-radius: 50px;
-  border: none;
+.custom-control {
+  margin-top: 20px;
 }
 
 
-.btn-facebook:hover {
-  background-color: #31519B;
-  transform: scale(1.1);
-  box-shadow: 4px 4px 4px gray;
-}
+
+.sign-up-btn {
+  width: 100%;
+  min-width: 80%;
+  max-width: 100%;
+  margin-left: 37px;
+  }
+
 
 p {
   text-align: center;
   margin-top: -10px;
+}
+
+[type=submit] {
+  width: 100%;
+  min-width: 80%;
+  max-width: 100%;
 }
 
 a{
@@ -248,7 +162,7 @@ a{
   color: blue;
 }
 
-/* signin styling stops here */
+/* signup styling stops here */
 
 /* Fallback for Edge
 -------------------------------------------------- */
