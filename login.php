@@ -19,6 +19,7 @@ if (isset($_COOKIE["heistuser"])) {
             $_SESSION['loggedin'] = true;
             $_SESSION['fullname'] = $user->fullname;
             $_SESSION['username'] = $user->username;
+            $_SESSION['phone'] = $user->phone;
             $msg = "Logged in successfully";
             header("location:welcome.php?message=$msg");
         } else {
@@ -63,6 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])) {
                     $_SESSION['loggedin'] = true;
                     $_SESSION['fullname'] = $user->fullname;
                     $_SESSION['username'] = $user->username;
+                    $_SESSION['phone'] = $user->phone;
                     $msg = "Logged in successfully";
                     header("location:welcome.php?message=$msg");
                 } else {
@@ -88,7 +90,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Team-Alien | Login Page</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <body>
     <?php if (isset($_GET['message'])): ?>
@@ -101,14 +103,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])) {
     <div class="container">
         <div class="row">
             <div class="col-sm col-md col-lg col-wrapper">
+            <!-- <div class="wrapper"> -->
                 <!-- <img src="img/desk.jpg"> -->
                 <section class=" col-sm-12 col-md-8 col-lg-8 form-section">
-                    <header class="header-content">
-                        <h1>Login</h1>
-                    </header>
 
                     <!--  form -->
                     <form class="form-signin needs-validation" novalidate method="POST">
+                            <h5 class="card-title text-center">Login</h5>
                         <section class="form-section">
 
                             <div class="form-group row">
@@ -131,17 +132,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])) {
                                     <!--  Please enter your password. -->
                                     </div>
                             </div>
-                            </div>
+                        </div>
 
-                            
                             <div class="custom-control custom-checkbox mb-3">
-                                <input type="checkbox" name="remember" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label" for="customCheck1">Remember password</label>
-                              </div>
-                              <button class="sign-in-btn btn btn-lg btn-primary btn-block text-uppercase col-sm-12 col-md-4" name="submit" type="submit">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                    <label class="custom-control-label" for="customCheck1">Remember Me</label>      
+                                    <div class="forgot_password">
+                                      <a href="#"><label for="forgot_passowrd">Forgot Password?</label></a>
+                                    </div>          
+                                  </div>
+
+
+                              <button class="sign-in-btn btn btn-lg btn-primary btn-block" name="submit" type="submit">
                                 Sign in
                             </button>
-                              <hr class="my-4">
+                              
                               <!-- <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit" ><i class="fab fa-google mr-2"></i> Sign in with Google</button>
                               <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Sign in with Facebook</button> -->
                             <hr class="my-4">
@@ -160,7 +165,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])) {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-<!-- <script>
+<script>
     // Example starter JavaScript for disabling form submissions if there are invalid fields
     (function() {
       'use strict';
@@ -179,7 +184,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])) {
         });
       }, false);
     })();
-    </script> -->
+    </script>
 
 
 </body>
