@@ -81,7 +81,7 @@ if (isset($_POST["submit"])) {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -98,19 +98,18 @@ if (isset($_POST["submit"])) {
     <section class="form-wrapper">
         <div class="container">
             <div class="row">
-                <div class="col-sm col-md col-lg col-wrapper">
+                <div class=".col-xs col-sm col-md col-lg col-wrapper">
                     <!-- <img src="img/desk.jpg"> -->
-                    <section class=" col-sm-12 col-md-8 col-lg-8 form-section">
-                        <header class="header-content">
-                            <h1>Sign Up</h1>
-                        </header>
-
+                    <section class=".col-xs col-sm-12 col-md-8 col-lg-8 form-section">  
+                           
                         <!-- new form -->
                         <form class="form-signup needs-validation" novalidate method="POST" name="form">
+                                <h5 class="card-title text-center">Sign Up</h5>
+                                <label for="msg" class=".col-xs col-sm-4 col-md-4 col-lg-4 col-form-label msg"></label>
                             <section class="form-section">
                                 <div class="form-group row">
-                                    <label for="fullName" class="col-sm-4 col-md-4 col-lg-4 col-form-label">Full Name:</label>
-                                    <div class="col-sm-8 col-md-8 col-lg-8">
+                                    <label for="fullName" class=".col-xs col-sm-4 col-md-4 col-lg-4 col-form-label">Full Name:</label>
+                                    <div class=".col-xs col-sm-8 col-md-8 col-lg-8">
                                         <input type="text" class="form-control" name = 'fullname' id="fullName" placeholder="Enter your full name" required>
                                        
                                         <div class="valid-feedback"> <!--form validation-->
@@ -122,8 +121,8 @@ if (isset($_POST["submit"])) {
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="username" class="col-sm-4 col-md-4 col-lg-4 col-form-label">  Username:</label>
-                                    <div class="col-sm-8 col-md-8 col-lg-8">
+                                    <label for="username" class=".col-xs col-sm-4 col-md-4 col-lg-4 col-form-label"> Username:</label>
+                                    <div class=".col-xs col-sm-8 col-md-8 col-lg-8">
                                         <input type="text" class="form-control" name='username' id="username" placeholder="Enter your username" required>
                                         
                                         <div class="invalid-feedback"> <!--form validation-->
@@ -133,8 +132,8 @@ if (isset($_POST["submit"])) {
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="inputPassword" class="col-sm-4 col-md-4 col-lg-4 col-form-label">Password</label>
-                                    <div class="col-sm-8 col-md-8 col-lg-8">
+                                    <label for="inputPassword" class=".col-xs col-sm-4 col-md-4 col-lg-4 col-form-label">Password</label>
+                                    <div class=".col-xs col-sm-8 col-md-8 col-lg-8">
                                     <input type="password" name='password' class="form-control" id="inputPassword" placeholder="Enter your password"  minlength="5" required>
                                     
                                     <div class="valid-feedback"><!--form validation-->
@@ -146,8 +145,8 @@ if (isset($_POST["submit"])) {
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="confirmPassword" class="col-sm-4 col-md-4 col-lg-4 col-form-label">Confirm Password</label>
-                                    <div class="col-sm-8 col-md-8 col-lg-8">
+                                    <label for="confirmPassword" class=".col-xs col-sm-4 col-md-4 col-lg-4 col-form-label">Confirm Password</label>
+                                    <div class=".col-xs col-sm-8 col-md-8 col-lg-8">
                                         <input type="password" name="Cpassword" class="form-control" id="confirmPassword" placeholder="Confirm your password"  minlength="5" required>
                                         
                                         <div class="invalid-feedback"> <!--form validation-->
@@ -157,7 +156,7 @@ if (isset($_POST["submit"])) {
                                 </div>
                                 
 
-                                <div class="form-checkbox">
+                                <div class="form-checkbox .col-xs col-sm col-md">
                                     <div class="form-group form-checkbox-inner">
                                         <div class="form-check col-sm-12 col-md-12 col-form-label">
                                             <input class="form-check-input was-validated" type="checkbox" id="gridCheck" required>
@@ -169,7 +168,7 @@ if (isset($_POST["submit"])) {
                                     </div>
                                 </div>
                                 
-                                <button class="sign-up-btn btn btn-lg btn-primary btn-block text-uppercase col-sm-12 col-md-4" type="submit" name="submit">
+                                <button class="sign-up-btn btn btn-lg btn-primary btn-block" type="submit" name="submit">
                                     Sign up
                                 </button>
 
@@ -188,7 +187,7 @@ if (isset($_POST["submit"])) {
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+    <!-- <script src="signup.js"></script> -->
     <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields
         (function() {
